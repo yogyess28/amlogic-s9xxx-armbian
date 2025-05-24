@@ -166,7 +166,7 @@ jobs:
           silent_log: ${{ inputs.silent_log }}
 
       - name: Upload Kernel to Release
-        uses: ncipollo/release-action@main
+        uses: yogyess28/release-action@main
         if: ${{ env.PACKAGED_STATUS }} == 'success' && !cancelled()
         with:
           tag: kernel_stable
