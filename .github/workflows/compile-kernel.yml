@@ -85,7 +85,7 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -yogyess
 
 env:
   TZ: America/New_York
