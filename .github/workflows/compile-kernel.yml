@@ -5,7 +5,13 @@
 #==========================================================================
 
 name: Compile the kernel
-
+  uses: ophub/amlogic-s9xxx-armbian@main
+  with:
+    build_target: kernel
+    kernel_version: 6.1.y_5.15.y
+    kernel_auto: true
+    kernel_sign: -yogyess
+    
 on:
   repository_dispatch:
   workflow_dispatch:
